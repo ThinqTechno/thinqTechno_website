@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThinqTechno</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <style>
         body{
             margin: 0;
@@ -13,8 +14,8 @@
             width: 100%;
         }
         .header{
-            padding: 20px;
-            background:rgba(0,0,0,0.4);
+            padding: 15px;
+            background:rgba(0,0,0,0.3);
             /* transition:background 1.5s ease; */
             position:fixed;
             width: 100%;
@@ -25,11 +26,11 @@
             position: relative;
             top: 5px;
             left: 5px;
-            width: 250px;  
+            width: 300px;  
         }
         .nav-bar{
             float: right;
-            padding-top: 15px;
+            padding-top: 10px;
             padding-right: 100px;
         }
         .nav{
@@ -42,31 +43,59 @@
         }
         .nav > li > a{
             text-decoration: none;
-            color: white;
+            color: #016a9d;
             font-size: 22px;
             padding: 10px 20px;
         }
         .nav > li > a:hover{
-            color: #016a9d;
+            /* color: #016a9d; */
+            color: #ff5505;
         }
-        
+        .active{
+            /* background-color: rgb(41, 40, 40); */
+            background-color: rgb(255, 255, 255);
+        }      
     </style>
 </head>
 <body>    
-   
-        <div class="header">
-            <img id="logo" src="images/logo.png" alt="ThinqTechno" >
-            <div class="nav-bar">
-                <ul class="nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+    <div class="header">
+        <a href="index.html"><img id="logo" src="images/logo.png" alt="ThinqTechno" ></a>
+        <div class="nav-bar">
+            <ul class="nav">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Carrier</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
         </div>
         <div class="main">
             <img src="images/dm.jfif" alt="Background_image">
         </div>
+        <div>
+            <h1 style="text-align: center;">About</h1>
+            <p>
+                ThinqTechno is a versatile software services company offering many services. 
+                Though still in a start-up phase it has already earned good reputation and is a Go-to company for many customers. 
+                The customers who have availed its services are returning to it again with more projects as they are impressed by its services. 
+                It derives the cost advantage of having it’s delivery team located in India. It adopts the latest best practices in technology and delivery models.
+                It is led by a team of professionals having good expertise in the Software industry. ThinqTechno uses the Agile development model in it’s project development model.
+                This ensures that the Customer has the luxury of defining the requirements up to the last stages.
+                Also there can be multiple releases which will allow the customer to go the market with the software faster, with every iteration. 
+                Progton offers different commercial models as well. Customers can choose from a fixed-price model or Time & Materials model or a dedicated team model.
+            </p>
+        </div>
+        <script>
+            $(function(){
+                $(window).on("scroll",function(){
+                    if($(window).scrollTop() > 300){
+                        $(".header").addClass("active");
+                    }else
+                    {
+                        $(".header").removeClass("active");
+                    }
+                });
+            });
+        </script>
 </body>
 </html>
