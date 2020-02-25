@@ -3,10 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ThinqTechno</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .main{
+            margin: 0;
+           
+            background-size: cover;
+        }
+        .header{
+            background-color: rgba(173, 216, 230, 0.4);
+            padding: 15px;
+            
+        }
+        #logo{
+            position: relative;
+            top: 5px;
+            left: 5px;
+            width: 250px;  
+        }
+        .nav-bar{
+            float: right;
+            padding-top: 15px;
+            padding-right: 100px;
+        }
+        .nav{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav >li{
+            display: inline-block;
+        }
+        .nav > li > a{
+            text-decoration: none;
+            font-size: 17px;
+            padding: 10px 20px;
+        }
+   
+        
+    </style>
 </head>
 <body>
-    <h1>hello world</h1>
-    <h1>hello again</h1>
+    <div class="header">
+        <img id="logo" src="images/logo.png" alt="ThinqTechno" >
+        <div class="nav-bar">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+        
+    <div class="main">
+        <img src="images/dm1.jpg" alt="">
+    </div>
 </body>
 </html>
