@@ -8,14 +8,16 @@
         body{
             margin: 0;
         }
-        .main{
-            margin: 0;
-           
+        .main > img{
             background-size: cover;
         }
         .header{
-            background-color: rgba(173, 216, 230, 0.4);
-            padding: 15px;
+            padding: 20px;
+            background:rgba(255,255,255,0.1);
+            transition:background 1.5s ease;
+            position:fixed;
+            width: 100%;
+            z-index:99;
             
         }
         #logo{
@@ -39,6 +41,7 @@
         }
         .nav > li > a{
             text-decoration: none;
+            color: white;
             font-size: 17px;
             padding: 10px 20px;
         }
@@ -46,21 +49,21 @@
         
     </style>
 </head>
-<body>
-    <div class="header">
-        <img id="logo" src="images/logo.png" alt="ThinqTechno" >
-        <div class="nav-bar">
-            <ul class="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+<body>    
+   
+        <div class="header">
+            <img id="logo" src="images/logo.png" alt="ThinqTechno" >
+            <div class="nav-bar">
+                <ul class="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-        
-    <div class="main">
-        <img src="images/dm1.jpg" alt="">
-    </div>
+        <div class="main">
+            <img src="images/dm1.jpg" alt="Background_image">
+        </div>
 </body>
 </html>
