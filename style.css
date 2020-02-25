@@ -1,0 +1,53 @@
+.mySlides {display: none;}
+body{
+    margin: 0;
+}
+.slideshow-container > img{
+    background-size: cover;
+    /* position: relative; */
+    width: 100%;
+}
+.header{
+    padding: 15px;
+    background:rgba(0,0,0,0.3);
+    /* transition:background 1.5s ease; */
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* z-index:99; */
+    
+}
+#logo{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 300px;  
+}
+.nav-bar{
+    float: right;
+    padding-top: 10px;
+    padding-right: 100px;
+}
+.nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav >li{
+    display: inline-block;
+}
+.nav > li > a{
+    text-decoration: none;
+    color: #016a9d;
+    font-size: 22px;
+    padding: 10px 20px;
+}
+.nav > li > a:hover{
+    /* color: #016a9d; */
+    color: #ff5505;
+}
+.active{
+    /* background-color: rgb(41, 40, 40); */
+    background-color: rgb(255, 255, 255);
+}
