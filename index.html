@@ -14,7 +14,7 @@
             <ul class="nav">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Carrier</a></li>
+                <li><a href="#">Carreers</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
         </div>
@@ -50,8 +50,7 @@
             $(function(){
                 $(window).on("scroll",function(){
                     if($(window).scrollTop() > 300){
-                        $(".header").addClass("active"); 
-                                           
+                        $(".header").addClass("active");                      
                     }else
                     {
                         $(".header").removeClass("active");
@@ -59,18 +58,21 @@
                 });
             });
 
-            // $(function(){
-            //     $(window).on("scroll",function(){
-            //         if($(window).scrollTop() > 250){
-            //             $(".prev").removeClass("prev");                    
-            //             $(".next").removeClass("next");
-            //         }
-            //         else{
-            //             $(".prev").addClass("prev");                    
-            //             $(".next").addClass("next");
-            //         }
-            //     });
-            // });
+            $(function(){
+                $(window).on("scroll",function(){
+                    if($(window).scrollTop() > 250){
+                        $(".prev").hide();                    
+                        $(".next").hide();
+
+
+                    }
+                    else{
+                        $(".prev").show();                   
+                        $(".next").show(); 
+                        
+                    }
+                });
+            });
         
 
             function plusSlides(n) {
