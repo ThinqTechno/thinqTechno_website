@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThinqTechno</title>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>    
@@ -20,20 +21,25 @@
         </div>
         </div>
         <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="images/empowered.png" style="width: 400px; position: absolute; top: 130px;left: 100px;"> 
+                <img src="images/network_background.jpg">
+            </div>
             <div class="mySlides"> 
                 <img src="images/device.jpg">
             </div>
             <div class="mySlides"> 
-                <img src="images/itconsulting.jpg">       
+                <img src="images/Consultation.jpg">       
             </div>
             <div class="mySlides">    
-                <img src="images/cyber_security2.jpg">
+                <img src="images/cyber-2.png">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <a name="about"></a>
+        <br><br><br>
         <div class="about">
             <h1>Who We Are...</h1>
             <p>
@@ -53,6 +59,7 @@
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
                 </p>
+                <a href="#" class="info">Read more...</a> 
             </div>
             <div class="box-effect">
                 <h3>Staffing Solution Services</h3>
@@ -60,13 +67,15 @@
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
                 </p>
+                <a href="#" class="info">Read more...</a> 
             </div>
             <div class="box-effect">
                 <h3>UI/UX Design</h3> 
                 <p>
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
-                </p> 
+                </p>
+                <a href="#" class="info">Read more...</a> 
             </div>
             <div class="box-effect">
                 <h3>Application development</h3>
@@ -74,6 +83,7 @@
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
                 </p>
+                <a href="#" class="info">Read more...</a>
             </div>
             <div class="box-effect">
                 <h3>Web Development</h3>
@@ -81,6 +91,7 @@
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
                 </p>
+                <a href="#" class="info">Read more...</a>
             </div>
             <div class="box-effect">
                 <h3>Digital Marketing</h3>
@@ -88,8 +99,52 @@
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
                 </p>
+                <a href="#" class="info">Read more...</a>
             </div>
-        </div>   
+        </div>
+        <h2>Connect with Us</h2>
+        <div class="bg-img">
+            <form action="#" class="container">
+                <!-- <label for="email"><b>Email</b></label> -->
+                <input type="text" placeholder="Name" name="name" required>&nbsp;
+                <input type="text" placeholder="Email" name="email" required>
+                <input type="text" placeholder="Company(optional)" name="comp_name" required>&nbsp;
+                <input type="text" placeholder="Phone number(optional)" name="comp_name" required>
+                <input type="text" placeholder="How did you first hear of us?" name="get_detail" size="50px" required"><br>
+                <textarea name="message" id="" cols="47" rows="10" placeholder="How can we Help?"></textarea>
+                <br>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div> 
+        <div class="footer">
+            <span class="inside-footer">
+                <h3>Bangalore Head office</h3>
+                No 154, "Royal Space" 5th Main HSR,<br> Layout 7<sup>th</sup> Sector, Bangalore,<br>
+                Bangalore, Karnataka, India, 560102
+            </span>
+            <span class="inside-footer">
+                <h3>Bagalkot office</h3>
+                ThinqTechno Systems Pvt. Ltd. Sy. No. 151/A, plot <br>
+                No. 46 Shivagiri Badavane, Vidyagiri, BAGALKOT<br>KARNATAKA
+                587103 
+            </span>
+            <span class="inside-footer">
+                <h3>USA office</h3>
+                ThinqTechno Systems Pvt. Ltd. Sy. No. 151/A, plot <br>
+                No. 46 Shivagiri Badavane, Vidyagiri, BAGALKOT<br>KARNATAKA
+                587103 
+            </span>
+            <span class="inside-footer">
+                <p style="font-weight: bold; font-family: cursive;">Social</p>
+                <a href="#" target="_blank"><i style="color: black; font-size: 25px;" class="fa fa-linkedin"></i></a>&nbsp;  
+                <a href="#" target="_blank"><i style="color: black; font-size: 25px;" class="fa fa-instagram"></i></a>&nbsp; 
+                <a href="#" target="_blank"><i style="color: black; font-size: 25px;" class="fa fa-twitter"></i></a>&nbsp;  
+                <a href="#" target="_blank"><i style="color: black; font-size: 25px;" class="fa fa-facebook"></i></a>&nbsp;
+            </span>
+            <br>
+            <hr>
+            <div style="text-align: center; font-weight: bold;">Copyright &copy;2019 THINQTECHNO SYSTEMS PRIVATE LIMITED. All right Reserved</div>
+        </div>  
         <script>
             $(function(){
                 $(window).on("scroll",function(){

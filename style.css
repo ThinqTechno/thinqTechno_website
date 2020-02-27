@@ -82,7 +82,7 @@ body{
     font-size: x-large;
     font-style: italic;
 }
-.about > h1,  h1{
+.about > h1,  h1, h2{
     text-align: center;
     font-family: cursive;
     color: #016a9d;
@@ -102,14 +102,14 @@ body{
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: 1rem;
-    margin: 10px;
+    grid-gap: 2.5rem;
+    margin: 50px;
 
 }
 .grid > div {
     /* background: #EDE7F6; */
     background: #ffffff;
-    padding: 1.5rem;
+    padding: 2.5rem;
     /* border-radius: 1rem; */
 }
 .grid > div:hover{
@@ -119,3 +119,74 @@ body{
     /* border: 1px solid #BFBFBF; */
     box-shadow: 10px 10px 5px #aaaaaa;
 }
+.info{
+    text-decoration: none;
+    float: right;
+    font-family: cursive;
+    color: #016a9d;
+}
+/* contact */
+
+.bg-img {
+    /* The image used */
+        background-image: url("images/phone.jfif");
+        min-height: 550px;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    /* Add styles to the form container */
+    .container {
+        position: absolute;
+        left: 0;
+        margin: 15px;
+        max-width: 500px;
+        padding: 16px;
+        background-color: #016a9d;
+    }
+
+    /* Full-width input fields */
+    input[type=text], textarea{
+        color: black;
+        padding: 15px;
+        margin: 5px 0 15px 0;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    input[type=text]:focus{
+        background-color: #ddd;
+        outline: none;
+    }
+
+    /* Set a style for the submit button */
+    .btn {
+        background-color: #ff5505;
+        border-radius: 15px;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.9;    
+    }
+    .btn:hover {
+        opacity: 1;
+    }
+
+/* footer */
+.footer{
+    background-color: #ff5505;;
+    padding: 20px;
+    padding-top: 30px;  
+    margin-top: 20px;
+}
+.inside-footer{
+    display: inline-block;
+    padding: 15px;
+}
+
+
