@@ -6,7 +6,9 @@
     <title>ThinqTechno</title>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="readMoreJS.min.js"></script>
 </head>
 <body>    
     <div class="header">
@@ -14,12 +16,30 @@
         <div class="nav-bar">
             <ul class="nav">
                 <li><a href="#about">About</a></li>
+                <li><a href="#">Carreers</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Services</button>
+                    <div class="dropdown-content">
+                        <a href="#">Software consulting</a>
+                        <a href="#">Web development</a>
+                        <a href="#">E-commerce portal</a>
+                        <a href="#">Mobile application</a>
+                        <a href="#">Software product implementation</a>
+                        <a href="#">Staffing</a>
+                    </div>
+                </div>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+        <!-- <div class="nav-bar">
+            <ul class="nav">
+                <li><a href="#about">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Carreers</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
-        </div>
-        </div>
+        </div> -->
         <div class="slideshow-container">
             <div class="mySlides">
                 <img src="images/empowered.png" style="width: 400px; position: absolute; top: 130px;left: 100px;"> 
@@ -54,85 +74,90 @@
         <h1>What We Do</h1>
         <div class="grid">
             <div class="box-effect"> 
-                <h3>IT Consulting</h3>
+                <h3>Customized software development</h3>
                 <p>
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
                 </p>
-                <a href="#" class="info">Read more...</a> 
+                <!-- <a href="#" class="info">Read more...</a>  -->
             </div>
             <div class="box-effect">
-                <h3>Staffing Solution Services</h3>
+                <h3>Software re-engineering</h3>
                 <p>
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
                 </p>
-                <a href="#" class="info">Read more...</a> 
+                <!-- <a href="#" class="info">Read more...</a>  -->
             </div>
             <div class="box-effect">
-                <h3>UI/UX Design</h3> 
+                <h3>Software support and maintenance</h3> 
                 <p>
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
                 </p>
-                <a href="#" class="info">Read more...</a> 
+                <!-- <a href="#" class="info">Read more...</a>  -->
             </div>
             <div class="box-effect">
-                <h3>Application development</h3>
+                <h3>Software product implementation</h3>
                 <p>
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
                 </p>
-                <a href="#" class="info">Read more...</a>
+                <!-- <a href="#" class="info">Read more...</a> -->
             </div>
             <div class="box-effect">
-                <h3>Web Development</h3>
+                <h3>Software migration</h3>
                 <p>
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
                 </p>
-                <a href="#" class="info">Read more...</a>
+                <!-- <a href="#" class="info">Read more...</a> -->
             </div>
             <div class="box-effect">
-                <h3>Digital Marketing</h3>
+                <h3>Software testing</h3>
                 <p>
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
                 </p>
-                <a href="#" class="info">Read more...</a>
+                <!-- <a href="#" class="info">Read more...</a> -->
             </div>
         </div>
+        
+        <a name="contact"></a>
+        <br><br><br>
         <h2>Connect with Us</h2>
         <div class="bg-img">
             <form action="#" class="container">
                 <!-- <label for="email"><b>Email</b></label> -->
                 <input type="text" placeholder="Name" name="name" required>&nbsp;
                 <input type="text" placeholder="Email" name="email" required>
-                <input type="text" placeholder="Company(optional)" name="comp_name" required>&nbsp;
-                <input type="text" placeholder="Phone number(optional)" name="comp_name" required>
+                <input type="text" placeholder="Company(optional)" name="comp_name">&nbsp;
+                <input type="text" placeholder="Phone number(optional)" name="comp_name">
                 <input type="text" placeholder="How did you first hear of us?" name="get_detail" size="50px" required"><br>
-                <textarea name="message" id="" cols="47" rows="10" placeholder="How can we Help?"></textarea>
+                <textarea name="message" id="" cols="47" rows="10" placeholder="How can we Help?" required></textarea>
                 <br>
                 <button type="submit" class="btn">Submit</button>
             </form>
         </div> 
         <div class="footer">
             <span class="inside-footer">
-                <h3>Bangalore Head office</h3>
+                <!-- <h3>Bangalore Head office <span><a style = "color: black;" href="https://www.google.com/maps/place/ThinqTechno+systems+Pvt.+Ltd./@12.9084693,77.6302374,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae15bb1b453621:0xe133be71d6982d83!8m2!3d12.9084693!4d77.6324315"><i class="material-icons">place</i></span></a></h3> -->
+                <h3>Bangalore Head office <span><a style = "color: black;" href="https://www.google.com/maps/place/ThinqTechno+systems+Pvt.+Ltd./12.908538+77.632426"><i class="material-icons">place</i></span></a></h3>
                 No 154, "Royal Space" 5th Main HSR,<br> Layout 7<sup>th</sup> Sector, Bangalore,<br>
                 Bangalore, Karnataka, India, 560102
             </span>
             <span class="inside-footer">
-                <h3>Bagalkot office</h3>
+                <h3>Bagalkot office <span>Location<i class="material-icons">place</i></span></h3>
                 ThinqTechno Systems Pvt. Ltd. Sy. No. 151/A, plot <br>
                 No. 46 Shivagiri Badavane, Vidyagiri, BAGALKOT<br>KARNATAKA
-                587103 
+                587103
+                 
             </span>
             <span class="inside-footer">
-                <h3>USA office</h3>
-                ThinqTechno Systems Pvt. Ltd. Sy. No. 151/A, plot <br>
-                No. 46 Shivagiri Badavane, Vidyagiri, BAGALKOT<br>KARNATAKA
-                587103 
+                <h3>USA office <span>Location<i class="material-icons">place</i></span></h3>
+                8456, north lake parkway,<br>
+                Orlando, Florida 32827<br>
+                contact: +14078645575
             </span>
             <span class="inside-footer">
                 <p style="font-weight: bold; font-family: cursive;">Social</p>
@@ -142,8 +167,10 @@
                 <a href="#" target="_blank"><i style="color: black; font-size: 25px;" class="fa fa-facebook"></i></a>&nbsp;
             </span>
             <br>
-            <hr>
-            <div style="text-align: center; font-weight: bold;">Copyright &copy;2019 THINQTECHNO SYSTEMS PRIVATE LIMITED. All right Reserved</div>
+            <div style="text-align: center; font-weight: bold;">
+                <hr>
+                Copyright &copy;2020 THINQTECHNO SYSTEMS PRIVATE LIMITED. All right Reserved
+            </div>
         </div>  
         <script>
             $(function(){
@@ -212,6 +239,15 @@
             x[myIndex-1].style.display = "block";  
             setTimeout(carousel, 8000); // Change image every 2 seconds
             }
+
+            // read more and read less
+            $readMoreJS.init({
+            target: '.box-effect p',           // Selector of the element the plugin applies to (any CSS selector, eg: '#', '.'). Default: ''
+            numOfWords: 10,               // Number of words to initially display (any number). Default: 50
+            toggle: true,                 // If true, user can toggle between 'read more' and 'read less'. Default: true
+            moreLink: 'Read more ...',    // The text of 'Read more' link. Default: 'read more ...'
+            lessLink: 'Read less'         // The text of 'Read less' link. Default: 'read less'
+            });
         </script>
 </body>
 </html>
