@@ -15,21 +15,23 @@
         <a href="index.html"><img id="logo" src="images/logo.png" alt="ThinqTechno" ></a>
         <div class="nav-bar">
             <ul class="nav">
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Carreers</a></li>
-                <div class="dropdown">
-                    <button class="dropbtn">Services</button>
-                    <div class="dropdown-content">
-                        <a href="#">Software consulting</a>
-                        <a href="#">Web development</a>
-                        <a href="#">E-commerce portal</a>
-                        <a href="#">Mobile application</a>
-                        <a href="#">Software product implementation</a>
-                        <a href="#">Staffing</a>
+                <li><a class="nav_names" href="#about">About</a></li>
+                <li><a class="nav_names" href="#">Career</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Services</button>
+                        <div class="dropdown-content">
+                            <a href="#">Software consulting</a>
+                            <a href="#">Web development</a>
+                            <a href="#">E-commerce portal</a>
+                            <a href="#">Mobile application</a>
+                            <a href="#">Software product implementation</a>
+                            <a href="#">Staffing</a>
+                        </div>    
                     </div>
-                </div>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+                </li>
+                <li><a class="nav_names" href="#contact">Contact</a></li>    
+            </ul> 
         </div>
     </div>
         <!-- <div class="nav-bar">
@@ -74,7 +76,7 @@
         <h1>What We Do</h1>
         <div class="grid">
             <div class="box-effect"> 
-                <h3>Customized software development</h3>
+                <h3>AI and ML</h3>
                 <p>
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
@@ -82,7 +84,7 @@
                 <!-- <a href="#" class="info">Read more...</a>  -->
             </div>
             <div class="box-effect">
-                <h3>Software re-engineering</h3>
+                <h3>Cloud computing</h3>
                 <p>
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
@@ -90,7 +92,7 @@
                 <!-- <a href="#" class="info">Read more...</a>  -->
             </div>
             <div class="box-effect">
-                <h3>Software support and maintenance</h3> 
+                <h3>Cyber security</h3> 
                 <p>
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
@@ -98,7 +100,7 @@
                 <!-- <a href="#" class="info">Read more...</a>  -->
             </div>
             <div class="box-effect">
-                <h3>Software product implementation</h3>
+                <h3>Digital services</h3>
                 <p>
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
@@ -106,7 +108,7 @@
                 <!-- <a href="#" class="info">Read more...</a> -->
             </div>
             <div class="box-effect">
-                <h3>Software migration</h3>
+                <h3>Technology Solutions</h3>
                 <p>
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
@@ -114,7 +116,47 @@
                 <!-- <a href="#" class="info">Read more...</a> -->
             </div>
             <div class="box-effect">
-                <h3>Software testing</h3>
+                <h3>IOT</h3>
+                <p>
+                    In management, information technology consulting as a
+                    field of activity focuses on advising organizations on how best to use information technology (IT)   
+                </p>
+                <!-- <a href="#" class="info">Read more...</a> -->
+            </div>
+            <div class="box-effect">
+                <h3>DevOps</h3>
+                <p>
+                    In management, information technology consulting as a
+                    field of activity focuses on advising organizations on how best to use information technology (IT)   
+                </p>
+                <!-- <a href="#" class="info">Read more...</a> -->
+            </div>
+            <div class="box-effect">
+                <h3>Big data</h3>
+                <p>
+                    In management, information technology consulting as a
+                    field of activity focuses on advising organizations on how best to use information technology (IT)   
+                </p>
+                <!-- <a href="#" class="info">Read more...</a> -->
+            </div>
+            <div class="box-effect">
+                <h3>Infrastructure service</h3>
+                <p>
+                    In management, information technology consulting as a
+                    field of activity focuses on advising organizations on how best to use information technology (IT)   
+                </p>
+                <!-- <a href="#" class="info">Read more...</a> -->
+            </div>
+            <div class="box-effect">
+                <h3>ERP implementation</h3>
+                <p>
+                    In management, information technology consulting as a
+                    field of activity focuses on advising organizations on how best to use information technology (IT)   
+                </p>
+                <!-- <a href="#" class="info">Read more...</a> -->
+            </div>
+            <div class="box-effect">
+                <h3>Digital marketing</h3>
                 <p>
                     In management, information technology consulting as a
                     field of activity focuses on advising organizations on how best to use information technology (IT)   
@@ -176,10 +218,16 @@
             $(function(){
                 $(window).on("scroll",function(){
                     if($(window).scrollTop() > 300){
-                        $(".header").addClass("active");                      
+                        $(".header").addClass("active");
+                        $(".dropbtn").addClass("active2");
+                        $(".nav_names").addClass("active2");
+
                     }else
                     {
                         $(".header").removeClass("active");
+                        $(".dropbtn").removeClass("active2");
+                        $(".nav_names").removeClass("active2");
+
                     }
                 });
             });

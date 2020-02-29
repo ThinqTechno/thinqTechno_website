@@ -27,36 +27,39 @@ body{
 /* navigation bar */
 .nav-bar{
     float: right;
-    padding-top: 10px;
+    /* padding-top: 5px; */
     padding-right: 200px;
 }
 .nav{
+
     list-style: none;
     margin: 0;
     padding: 0;
+    
 }
 .nav >li{
     display: inline-block;
 }
-.nav > li > a{
+.nav_names{
+    padding: 15px 20px;
     text-decoration: none;
-    color: #016a9d;
+    /* color: #016a9d;*/
+    color: white;
     font-size: 22px;
     font-weight: bold;
     font-family: poppins;
-    padding: 10px 20px;
+   
 }
-.dropdown{
-    float: right;
-    overflow: hidden;
-}
+
 .dropbtn{
+    cursor: pointer;
     font-size: 22px;
     border: none;
     outline: none;
-    color: #016a9d;
+    /* color: #016a9d; */
+    color: white;
     font-weight: bold;
-    padding: 4px 20px;
+    padding: 15px 20px;
     background-color: inherit;
     margin: 0;
 
@@ -72,16 +75,17 @@ body{
 .dropdown-content a {
     display: block;
     float: none;
-    color: #016a9d;
-    padding: 12px 16px;
+    color: black;
+    padding: 12px 10px;
     text-decoration: none;
     text-align: left;
+    font-weight: bold;
 }
 .dropdown-content a:hover {
     background-color: #ff5505;
 }
 .dropdown:hover .dropdown-content {
-display: block;
+    display: block;
 }
 .nav > li > a:hover, .dropbtn:hover{
     color: #ff5505;
@@ -89,8 +93,11 @@ display: block;
 .active{
     /* background-color: rgb(41, 40, 40); */
     background-color: rgb(255, 255, 255);
+    color: black;
 }
-
+.active2{
+    color: #ff5505;
+}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -145,7 +152,7 @@ display: block;
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 2.5rem;
     margin: 20px 80px;
    
@@ -157,9 +164,9 @@ display: block;
     padding: 2.5rem;
     /* border-radius: 1rem; */
 }
-/* .grid > div:hover{
+.grid > div:hover{
     background-color: rgb(171, 197, 240);
-} */
+}
 .box-effect {
     /* border: 1px solid #BFBFBF; */
     box-shadow: 10px 10px 5px #aaaaaa;
@@ -186,17 +193,17 @@ display: block;
     /* The image used */
         background-image: url("images/phone.jfif");
         min-height: 550px;
-        /* filter: grayscale(80%); */
+        padding: 10px;
         /* Center and scale the image nicely */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
+        position: static;
     }
 
     /* Add styles to the form container */
     .container {
-        position: absolute;
+        position: inherit;
         left: 0;
         margin: 15px;
         max-width: 390px;
@@ -220,18 +227,18 @@ display: block;
 
     /* Set a style for the submit button */
     .btn {
-        background-color: #ff5505;
+        background-color: #ff732f;
         /* border-radius: 15px; */
         color: white;
         border: none;
         margin-left: 150px;
         padding: 10px 10px;
         cursor: pointer;
-        opacity: 0.9;
+        /* opacity: 0.9; */
 
     }
     .btn:hover {
-        opacity: 1;
+        background-color: #f75000;
     }
 
 /* footer */
