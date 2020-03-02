@@ -171,7 +171,6 @@
         </div>
         
         <a name="contact"></a>
-        
         <h2 style="margin-top: 100px;font-size: 25px;">Connect with Us</h2>
         <div class="bg-img">
             <div class="contact-info">
@@ -185,16 +184,16 @@
                     <i style="padding-left: 50px;" class="material-icons">watch_later</i><pre> We will respond to <br> you within 24 hours</pre>    
                 </span>
             </div>
-            <form action="#" class="container">
+            <form action="action.php" method = "POST" class="container">
                 <!-- <label for="email"><b>Email</b></label> -->
                 <input type="text" placeholder="Name" name="name" required>&nbsp;
-                <input type="text" placeholder="Email" name="email" required>
-                <input type="text" placeholder="Company(optional)" name="comp_name">&nbsp;
-                <input type="text" placeholder="Phone number(optional)" name="comp_name">
-                <input type="text" placeholder="How did you first hear of us?" name="get_detail" size="67px" required"><br>
-                <textarea name="message" id="" cols="70" rows="10" placeholder="How can we Help?" required></textarea>
+                <input type="text" placeholder="Email" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
+                <input type="text" placeholder="Company(optional)" name="company">&nbsp;
+                <input type="text" placeholder="Phone number(optional)" name="phone">
+                <input type="text" name="msg1" placeholder="How did you first hear of us?" name="get_detail" size="67px" required"><br>
+                <textarea name="msg2" id="" cols="70" rows="10" placeholder="How can we Help?" required></textarea>
                 <br>
-                <button type="submit" class="btn">Submit</button>
+                <button type="submit" name="submit" class="btn">Submit</button>
             </form>
         </div> 
         <div class="footer">
