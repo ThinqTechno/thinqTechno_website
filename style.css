@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 .mySlides {display: none;}
-body{
-    margin: 0;
+body,html{
+    
     background-color: #e5e5e5;
+    height: 60%;
+    margin: 0;
 }
 
 /* .slideshow-container{
     max-width: 1000px;
     ?
 } */
-.mySlides > img{
+/* .mySlides > img{
     background-size: cover;
     width: 100%;
     height: auto;
-}
+} */
 .header{
     padding: 15px;
-    background:rgba(0,0,0,0.2);
+    background:rgba(255,255,255,0.6);
     position:fixed;
     top: 0;
     left: 0;
@@ -30,49 +32,45 @@ body{
     left: 5px;
     width: 20%;  
 }
-/* #img1{
-    background-image: url("images/network_background.jpg");
-    width: 100%;
-    height: 100%;
+#particles-js
+{
+    background-image: url(images/bg2.jpg);
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
     background-size: cover;
     background-position: center;
-}
-#img2{
-    background-image: url("images/device.jpg");
     
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
 }
-#img3{
-    background-image: url("images/Consultation.jpg");
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
+#menu{
+    display: none; 
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    padding-right: 25px;
 }
-#img4{
-    background-image: url("images/cyber-2.png");
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-} */
+#close{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding-right: 25px;
+}
+
 /* navigation bar */
-.nav-bar{
+#nav-bar{
     float: right;
     /* padding-top: 5px; */
     padding-right: 10%;
 }
-.nav{
-
+#nav{
     list-style: none;
     margin: 0;
     padding: 0;
     
 }
-.nav >li{
+#nav >li{
     display: inline-block;
 }
 .nav_names{
@@ -81,7 +79,7 @@ body{
     /* color: #016a9d;*/
     color: #ff5505;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: normal;
     font-family: poppins;
    
 }
@@ -123,41 +121,43 @@ body{
 .dropdown:hover .dropdown-content {
     display: block;
 } */
-.nav > li > a:hover, .dropbtn:hover{
+#nav > li > a:hover{
     color: #ff5505;
 }
 .active{
     background-color: #17252a;
-    /* background-color: rgb(255, 255, 255); */
-    /* background-color: rgb(0, 0, 0); */
-    color: black;
 }
 .active2{
     color: white;
 }
-@media only screen and (min-width: 250px) and (max-width: 768px) {
-    .nav >li {
-      display:block;
+@media only screen and (max-width: 768px) {
+    #nav-bar{
+      display:none;  
+    }
+    #nav >li{
+        display: block;
+    }
+    #menu{
+        display: block;
+    }
+    #close{
+        display: none;
     }
     #logo{
         width: 200px;
     }
     .nav_names{
         font-weight: normal;
-        padding: 5px 10px;
-    }
-    .dropbtn{
-        font-weight: normal;
+        font-size: 15px;
         padding: 5px 10px;
     }
     input[type=text]{
         padding-right: 5%;
-    }
-    
-  }
+    }    
+}
 
 /* Next & previous buttons */
-.prev, .next {
+/* .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -170,40 +170,68 @@ body{
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-}
+} */
 /* Position the "next button" to the right */
-.next {
+/* .next {
     right: 0;
     border-radius: 3px 0 0 3px;
-}
+} */
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+/* .prev:hover, .next:hover {
    color: #ff5505;
-}
+} */
 
 /* who we are (About section) */
-.about{
-    margin-top: 0;
-    background-color: white;
+
+.parallax{
+    /* The image used */
+    background-image: url('../images/background.jpg');
+    /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.about > p{
-    padding: 1% 5%;
-    text-align: justify;
+.parallax2{
+    /* The image used */
+    background-image: url('../images/background2.jpg');
+    /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.para{
     font-size: 20px;
-    
-    margin: 0 70px;
-    /* font-style: italic; */
+    padding:25px;
+    text-align: justify;
+    margin: 0;
+    font-family: poppins;
 }
+
 .about > h1,  h1, h2{
     text-align: center;
     font-family: poppins;
     color: #016a9d;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-size: 25px;
+    font-size: 30px;
+    margin: 0;
 }
-
-
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size: 24px;
+        padding: 0;
+    }
+    .para{
+        font-size: 14px;
+        padding: 10px;
+    }
+}
 /* services */
 .box-effect > h3{
     text-align: center;
@@ -215,7 +243,7 @@ body{
     font-size: large;
     /* font-style: italic; */
 }
-.grid {
+#grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 2.5rem;
@@ -223,13 +251,13 @@ body{
    
 
 }
-.grid > div {
+#grid > div {
     /* background: #EDE7F6; */
     background: #ffffff;
     padding: 2.5rem;
     /* border-radius: 1rem; */
 }
-.grid > div:hover{
+#grid > div:hover{
     box-shadow: 10px 20px 10px #aaaaaa;
 }
 .box-effect {
@@ -252,6 +280,7 @@ body{
 	color: #ff5505;
 	text-decoration: none;
 }
+
 /* contact */
 
 .contact-info{
@@ -341,9 +370,6 @@ input[type=submit]:hover {
 .footer{
     background-color: #17252a;
     color: white;
-    /* padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 2%;   */
     margin-top: 20px;
     font-family: poppins;
 }
@@ -351,7 +377,49 @@ input[type=submit]:hover {
     display: inline-block;
     padding: 2%;
 }
-
-
+.copyright{
+    text-align: center;
+    font-weight: bold;
+}
+@media only screen and (max-width: 700px){
+    .footer{
+        margin-top: 10px;
+    }
+    .inside-footer{
+        font-size: 12px;
+        font-weight: normal;
+        padding: 5px;
+    }
+    .copyright{
+        font-weight: normal;
+    }
+}
+/* About us page */
+#background{
+    background-image: url('../images/about.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    /* filter: grayscale(20%); */
+}
+#box1{
+    background-color: #cccdcb;
+    font-family: poppins;
+}
+#box2{
+    background-color: white;
+    position: absolute;
+    position: static;
+    float: right;
+    width: 50%;
+}
+#box3{
+    background-color: white;
+    position: absolute;
+    position: static;
+    float: left;
+    width: 50%;
+}
 
 

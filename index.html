@@ -11,14 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="readMoreJS.min.js"></script>
 </head>
 <body>    
     <div class="header">
         <a href="index.html"><img id="logo" src="images/logo.png" alt="ThinqTechno" ></a>
-        <div class="nav-bar">
-            <ul class="nav">
-                <li><a class="nav_names" href="#about">About</a></li>
+        <span id="menu" onclick="menu()"><i style="color: #ff5505; font-size: 30px;" class="material-icons">menu</i></span>
+        <span id="close" onclick ="close()"><i style="color: #ff5505; font-size: 25px;" class="material-icons">close</i></span>
+        <div id="nav-bar">
+            <ul id="nav"> 
+                <li><a class="nav_names" href="about.html">About</a></li>
                 <li>
                 <a class="nav_names" href="#services">Services</a>
 
@@ -40,56 +41,78 @@
                     </div> -->
                 </li>
                 <li><a class="nav_names" href="#">Career</a></li>
-                <li><a class="nav_names" href="#contact">Contact</a></li>    
+                <li><a class="nav_names" href="index.html#contact">Contact</a></li>    
             </ul> 
         </div>
     </div>
-        <!-- <div class="nav-bar">
-            <ul class="nav">
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Carreers</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </div> -->
-        <div class="slideshow-container">
+    <div id="particles-js"></div>   
+        <!-- <div class="slideshow-container">
             <div class="mySlides">
-                <!-- <img src="images/empowered.png" style="width: 400px; height: 100px; position: absolute; top: 130px;left: 100px;">  -->
-                <!-- <div id="img1"></div> -->
+                <img src="images/empowered.png" style="width: 400px; height: 100px; position: absolute; top: 130px;left: 100px;"> 
+                <div id="img1"></div>
                 <img src="images/network_background.jpg"  style="width:100%">
             </div>
             <div class="mySlides"> 
-                <!-- <div id="img2"></div> -->
+                <div id="img2"></div>
                 <img src="images/device.jpg"  style="width:100%">
             </div>
             <div class="mySlides">
-                <!-- <div id="img3"></div> -->
+                <div id="img3"></div>
                 <img src="images/Consultation.jpg"  style="width:100%">
             </div>
             <div class="mySlides">
-                <!-- <div id="img4"></div> -->
+                <div id="img4"></div>
                 <img src="images/cyber-2.png"  style="width:100%">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        
-        <div class="about">
-            <a name="about"></a>
-            <h1 style="margin-top: 0;">Who We Are...</h1>
-            <p>
-                We are a digital transformation consultancy and software development
-                company that provides cutting edge Engineering Solutions, with a deep
-                understanding of Modern Technology and strong expertise in multiple 
-                business domains. We are helping start-ups, medium and large enterprise
-                clients untangle complex issues that always emerge during their digital 
-                evolution journey.
-            </p>
-        </div>
+        </div> -->
+        <a name="about"></a>
+            <div class="parallax"></div>
+
+            <div style="height:400px;background-color:white;">
+                <h1>About us</h1>
+                <p class="para">
+                    Information Technology enables business and business drives IT. Thriving organizations create one unified team from these divergent silos. 
+                THINQTECHNO enables our partners to align their business and Information Technology needs, uniting knowledge, skills, and resources to maintain a competitive advantage.
+                Lead by a strong, experienced team from the industry with strong values, our organization provides high client focus and innovation, to accelerate our customers’ digital transformation goals for their products and services, with high-quality, on-time, cost-effective services.
+                We understand the complexities of modern digital hardware, software technologies, and product development life-cycle. From ideation, design, development, testing, and deployment, to operations, support, and sustenance, THINQTECHNO ensures your digital transformation journey remains a hassle-free experience. 
+                At THINQTECHNO, we aim at being committed long term partners in our customers’ evolving business goals.
+                </p>  
+            </div>
+
+            <div class="parallax"></div>    
+
+            <div style="height:300px;background-color:white;">
+                <h1>Who We Are...</h1>
+                <p class="para">
+                    We are a digital transformation consultancy and software development company that provides cutting edge Engineering Solutions, with a deep understanding of Modern Technology and strong expertise in multiple business domains. We are helping start-ups, medium and large enterprise clients untangle complex issues that always emerge during their digital evolution journey.
+                    We offer an integrated portfolio of products, solutions, services, built around Digital, IoT, Cloud, Automation, AI/ML, Cybersecurity, SAP, Analytics, Infrastructure Management and Engineering Services, amongst others, to help start-ups, medium and big enterprises reimagine their businesses for the digital age.
+                </p>
+            </div>
+
+            <div class="parallax2"></div>
+
+            <!-- <div style="height:200px;background-color:white;">
+                <h1>Vision</h1>
+                <p class="para">
+                    To be a niche technology solution company across various domains globally.
+                </p>            
+            </div>
+
+            <div class="parallax"></div>
+
+            <div style="height:200px;background-color:white;">
+                <h1>Mission</h1>
+                <p class="para">
+                    Empower the businesses through simple, reliable and effective technology solutions to accelerate business transformation and digital journey that creates value for all our stakeholders.
+                </p>
+            </div> -->
+               
         <h1>What We Do</h1>
         <a name="services"></a>
-        <div class="grid">
+        <div id="grid">
             <div class="box-effect"> 
                 <h3>AI and ML</h3>
                 <p>
@@ -226,14 +249,14 @@
         <div class="footer">
             <span class="inside-footer">
                 <!-- <h3>Bangalore Head office <span><a style = "color: black;" href="https://www.google.com/maps/place/ThinqTechno+systems+Pvt.+Ltd./@12.9084693,77.6302374,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae15bb1b453621:0xe133be71d6982d83!8m2!3d12.9084693!4d77.6324315"><i class="material-icons">place</i></span></a></h3> -->
-                <h3>Bangalore Head office <span><a style = "color: white;" href="https://www.google.com/maps/place/ThinqTechno+systems+Pvt.+Ltd./12.908538+77.632426"><i class="material-icons">place</i></span></a></h3>
+                <h3>Bangalore Head office <span><a style = "color: white;" target="_blank" href="https://www.google.com/maps/place/ThinqTechno+systems+Pvt.+Ltd./12.908538+77.632426"><i class="material-icons">place</i></span></a></h3>
                 No 154, "Royal Space" 5th Main HSR,<br> Layout 7<sup>th</sup> Sector, Bangalore,<br>
                 Bangalore, Karnataka, India, 560102
             </span>
             <span class="inside-footer">
                 <h3>Bagalkot office <span>Location<i class="material-icons">place</i></span></h3>
-                ThinqTechno Systems Pvt. Ltd. Sy. No. 151/A, plot <br>
-                No. 46 Shivagiri Badavane, Vidyagiri, BAGALKOT<br>KARNATAKA
+                ThinqTechno Systems Pvt. Ltd. Sy. No. 151/A,<br>
+                plot No. 46 Shivagiri Badavane, Vidyagiri,<br>BAGALKOT KARNATAKA
                 587103
                  
             </span>
@@ -243,7 +266,7 @@
                 Orlando, Florida 32827<br>
                 contact: +14078645575
             </span>
-            <span class="inside-footer">
+            <span class="inside-footer" style="padding-left: 12%;">
                 <p style="font-weight: bold; font-family: cursive;">Social</p>
                 <a href="#" target="_blank"><i style="color: white; font-size: 25px;" class="fa fa-linkedin"></i></a>&nbsp;  
                 <a href="#" target="_blank"><i style="color: white; font-size: 25px;" class="fa fa-instagram"></i></a>&nbsp; 
@@ -251,12 +274,25 @@
                 <a href="#" target="_blank"><i style="color: white; font-size: 25px;" class="fa fa-facebook"></i></a>&nbsp;
             </span>
             <br>
-            <div style="text-align: center; font-weight: bold;">
+            <div class="copyright">
                 <hr>
                 Copyright &copy;2020 ThinqTechno. All right Reserved
             </div>
-        </div>  
+        </div>
+        <script src="readMoreJS.min.js"></script>
+        
+       
         <script>
+            function menu(){
+                document.getElementById("menu").style.display = "none";
+                document.getElementById("nav-bar").style.display = "block";
+                document.getElementById("close").style.display = "block";
+            }
+            function close(){
+                document.getElementById("close").style.display = "none";
+                document.getElementById("nav-bar").style.display = "none";
+                document.getElementById("menu").style.display = "block";
+            }
             $(function(){
                 $(window).on("scroll",function(){
                     if($(window).scrollTop() > 300){
@@ -274,60 +310,60 @@
                 });
             });
 
-            $(function(){
-                $(window).on("scroll",function(){
-                    if($(window).scrollTop() > 250){
-                        $(".prev").hide();                    
-                        $(".next").hide();
+            // $(function(){
+            //     $(window).on("scroll",function(){
+            //         if($(window).scrollTop() > 250){
+            //             $(".prev").hide();                    
+            //             $(".next").hide();
 
 
-                    }
-                    else{
-                        $(".prev").show();                   
-                        $(".next").show();   
-                    }
-                });
-            });
+            //         }
+            //         else{
+            //             $(".prev").show();                   
+            //             $(".next").show();   
+            //         }
+            //     });
+            // });
         
 
-            function plusSlides(n) {
-            showSlides(slideIndex += n);
-            }
+            // function plusSlides(n) {
+            // showSlides(slideIndex += n);
+            // }
 
-            function currentSlide(n) {
-            showSlides(slideIndex = n);
-            }
+            // function currentSlide(n) {
+            // showSlides(slideIndex = n);
+            // }
 
-            var slideIndex = 0;
-            showSlides(slideIndex);
+            // var slideIndex = 0;
+            // showSlides(slideIndex);
             
             
-            function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            slides[slideIndex-1].style.display = "block";  
-            }
+            // function showSlides(n) {
+            // var i;
+            // var slides = document.getElementsByClassName("mySlides");
+            // if (n > slides.length) {slideIndex = 1}    
+            // if (n < 1) {slideIndex = slides.length}
+            // for (i = 0; i < slides.length; i++) {
+            //     slides[i].style.display = "none";  
+            // }
+            // slides[slideIndex-1].style.display = "block";  
+            // }
 
-            // automatic sliding of Images
-            var myIndex = 0;
-            carousel();
+            // // automatic sliding of Images
+            // var myIndex = 0;
+            // carousel();
 
-            function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 8000); // Change image every 2 seconds
-            }
+            // function carousel() {
+            // var i;
+            // var x = document.getElementsByClassName("mySlides");
+            // for (i = 0; i < x.length; i++) {
+            //     x[i].style.display = "none";  
+            // }
+            // myIndex++;
+            // if (myIndex > x.length) {myIndex = 1}    
+            // x[myIndex-1].style.display = "block";  
+            // setTimeout(carousel, 8000); // Change image every 2 seconds
+            // }
 
             // read more and read less
             $readMoreJS.init({
@@ -338,5 +374,7 @@
             lessLink: 'Read less'         // The text of 'Read less' link. Default: 'read less'
             });
         </script>
+        <script src="particles.js"></script>  
+        <script src="app.js"></script>  
 </body>
 </html>
