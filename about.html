@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,8 +12,8 @@
 <body>
     <div class="header">
         <a href="index.html"><img id="logo" src="images/logo.png" alt="ThinqTechno" ></a>
-        <span id="menu" onclick="menu()"><i style="color: #ff5505; font-size: 30px;" class="material-icons">menu</i></span>
-        <span id="close" onclick ="close()"><i style="color: #ff5505; font-size: 25px;" class="material-icons">close</i></span>
+        <span id="menu" ><i style="color: #ff5505; font-size: 30px;" class="material-icons">menu</i></span>
+        <span id="close" ><i style="color: #ff5505; font-size: 25px;" class="material-icons">close</i></span>
         <div id="nav-bar">
             <ul id="nav"> 
                 <li><a class="nav_names" href="about.html">About</a></li>
@@ -91,16 +91,49 @@
         </div>
     </div>
     <script>
-        function menu(){
-            document.getElementById("menu").style.display = "none";
-            document.getElementById("nav-bar").style.display = "block";
-            document.getElementById("close").style.display = "block";
-        }
-        function close(){
-            document.getElementById("close").style.display = "none";
-            document.getElementById("nav-bar").style.display = "none";
-            document.getElementById("menu").style.display = "block";
-        }
+        // function menu(){
+        //     document.getElementById("menu").style.display = "none";
+        //     document.getElementById("nav-bar").style.display = "block";
+        //     document.getElementById("close").style.display = "block";
+        // }
+        // function close(){
+        //     document.getElementById("close").style.display = "none";
+        //     document.getElementById("nav-bar").style.display = "none";
+        //     document.getElementById("menu").style.display = "block";
+        // }
+
+        $(function(){
+            $('#menu').on("click",function(){
+            
+                $('#menu').hide();
+                $('#nav-bar').show();
+                $('#close').show();
+            });
+            $("#close").on("click",function(){
+                
+                $("#menu").show();
+                $("#nav-bar").hide();
+                $("#close").hide();    
+            });    
+        });
+
+        $(function(){
+            $(window).resize(function(){
+                if($(window).width() < 768){
+                    $("#menu").show();
+                    $('#nav-bar').hide();
+                    $('#close').hide();
+                }
+                else 
+                {
+                    $('#menu').hide();
+                    $('#nav-bar').show();
+                    $("#close").hide();      
+                }
+                
+            });
+        });
+       
         $(function(){
             $(window).on("scroll",function(){
                 if($(window).scrollTop() > 300){

@@ -130,6 +130,11 @@ body,html{
 .active2{
     color: white;
 }
+/* @media only screen and(min-width: 768px){
+    #close{
+        display: none;
+    }
+} */
 @media only screen and (max-width: 768px) {
     #nav-bar{
       display:none;  
@@ -140,9 +145,9 @@ body,html{
     #menu{
         display: block;
     }
-    #close{
+    /* #close{
         display: none;
-    }
+    } */
     #logo{
         width: 200px;
     }
