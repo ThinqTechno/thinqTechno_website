@@ -40,7 +40,7 @@
                         </div>    
                     </div> -->
                 </li>
-                <li><a class="nav_names" href="#">Career</a></li>
+                <li><a class="nav_names" href="career.html">Career</a></li>
                 <li><a class="nav_names" href="index.html#contact">Contact</a></li>    
             </ul> 
         </div>
@@ -94,24 +94,9 @@
 
             <div class="parallax2"></div>
 
-            <!-- <div style="height:200px;background-color:white;">
-                <h1>Vision</h1>
-                <p class="para">
-                    To be a niche technology solution company across various domains globally.
-                </p>            
-            </div>
-
-            <div class="parallax"></div>
-
-            <div style="height:200px;background-color:white;">
-                <h1>Mission</h1>
-                <p class="para">
-                    Empower the businesses through simple, reliable and effective technology solutions to accelerate business transformation and digital journey that creates value for all our stakeholders.
-                </p>
-            </div> -->
-               
-        <h1>What We Do</h1>
         <a name="services"></a>
+        <br>      
+        <h1>What We Do</h1>
         <div id="grid">
             <div class="box-effect"> 
                 <h3>AI and ML</h3>
@@ -132,16 +117,21 @@
             <div class="box-effect">
                 <h3>Cyber security</h3> 
                 <p>
-                    In management, information technology consulting as a
-                    field of activity focuses on advising organizations on how best to use information technology (IT)   
+                    In this age of digital transformation, where desired information needs to be provided at one’s fingertips and accessible from anywhere at any time, Cybersecurity becomes a core business requirement, providing a secure foundation to transform your business.<br>
+                    ThinqTechno cybersecurity solutions encompass a holistic, cohesive and integrated approach to counter Cyber threats round the clock—right from detection to protection, in-time preventive action, and remediation.<br>
+                    Through ThinqTechno's portfolio of cybersecurity services, your business gains access to proven expertise and experience, providing you the security that unlocks your innovation.<br>
+                    By minimizing risk, you are free to take more risks to accelerate your business. ThinqTechno Security solutions can help protect data, create trusted user relationships, and secure your digital transformation journey.   
                 </p>
                 <!-- <a href="#" class="info">Read more...</a>  -->
             </div>
             <div class="box-effect">
                 <h3>Digital services</h3>
                 <p>
-                    In management, information technology consulting as a
-                    field of activity focuses on advising organizations on how best to use information technology (IT)   
+                    A business needs to establish its digital footprint to perform in today's market. Customers rely on websites and apps to get information about products and services. Without dedicated apps, companies are bound to underperform irrespective of how good their products and services are.<br>
+                    These apps help you in building brand awareness and brand value and get you connected to customers that you didn’t even know existed. Apps have become a necessity, to turn the vision of a company into reality.<br>
+                    However, building an attractive and efficient Web, iOS or Android mobile application is not an easy task. Our team at ThinqTechno finds the perfect blend of strategy, analysis, and software development approach, to help businesses create reliable applications for their clients.<br> 
+                    Because of our expertise in native and cross-platform technologies, ThinqTechno always finds the right balance between price, quality, and project requirements.
+                    If you’re looking to leverage mobile technology for your business, ThinqTechno is at your service.   
                 </p>
                 <!-- <a href="#" class="info">Read more...</a> -->
             </div>
@@ -205,15 +195,18 @@
         
         <a name="contact"></a>
         <h2 style="margin-top: 100px;font-size: 25px;">Connect with Us</h2>
-        <div class="container">
+        <div class="container">    
             <div class="contact-info">
+                <span id="adjust" style="color: white;"><i class="material-icons">assignment</i></span>
                 <span class="contact-info-detail">
-                    <i style="padding-left: 35px;" class="material-icons">assignment</i><pre>We're ready to sign <br>NDA agreement</pre>
+                    We're ready to sign <br>NDA agreement
                 </span>
+                <span id="adjust" style="color: white;"><i  class="material-icons">watch_later</i></span>
                 <span class="contact-info-detail">
-                    <i style="padding-left: 50px;" class="material-icons">watch_later</i><pre> We will respond to <br> you within 24 hours</pre>    
+                    We will respond to <br> you within 24 hours    
                 </span>
             </div>
+            <br>
             <form action="action.php" method = "POST">
             <div class="row">
               <div class="col-25">
@@ -266,7 +259,7 @@
                 Orlando, Florida 32827<br>
                 contact: +14078645575
             </span>
-            <span class="inside-footer" style="padding-left: 12%;">
+            <span class="inside-footer" id="social">
                 <p style="font-weight: bold; font-family: cursive;">Social</p>
                 <a href="#" target="_blank"><i style="color: white; font-size: 25px;" class="fa fa-linkedin"></i></a>&nbsp;  
                 <a href="#" target="_blank"><i style="color: white; font-size: 25px;" class="fa fa-instagram"></i></a>&nbsp; 
@@ -293,23 +286,7 @@
             //     document.getElementById("nav-bar").style.display = "none";
             //     document.getElementById("close").style.display = "none";
             // }
-            // $(function(){
-            //     $('#menu').on("click",function(){
-            //         $(window).resize(function(){
-            //             if($(window).width() < 768){
-            //                 $('#menu').hide();
-            //                 $('#nav-bar').show();
-            //                 $('#close').show();
-            //             }
-            //             else{
-            //                 $('#close').hide();
-            //                 $('#menu').hide();
-            //                 $('#nav-bar').show();
-            //             }
-            //         });    
-            //     });
-            // });
-
+           
             $(function(){
                 $('#menu').on("click",function(){
                 
@@ -324,6 +301,7 @@
                     $("#close").hide();    
                 });    
             });
+
             $(function(){
                 $(window).resize(function(){
                     if($(window).width() < 768){
@@ -340,25 +318,7 @@
                     
                 });
             });
-            
-       
-            // $(function(){
-            //     $("#close").on("click",function(){
-            //         $(window).resize(function(){
-            //             if($(window).width() < 768){
-            //                 $("#menu").show();
-            //                 $("#nav-bar").hide();
-            //                 $("#close").hide();
-            //             }
-            //             else
-            //             {
-            //                 $("#close").hide();
-            //             }
-            //         });
-            //     });
-            // });
-       
-                
+                 
             $(function(){
                 $(window).on("scroll",function(){
                     if($(window).scrollTop() > 300){
@@ -434,7 +394,7 @@
             // read more and read less
             $readMoreJS.init({
             target: '.box-effect p',           // Selector of the element the plugin applies to (any CSS selector, eg: '#', '.'). Default: ''
-            numOfWords: 10,               // Number of words to initially display (any number). Default: 50
+            numOfWords: 20,               // Number of words to initially display (any number). Default: 50
             toggle: true,                 // If true, user can toggle between 'read more' and 'read less'. Default: true
             moreLink: 'Read more ...',    // The text of 'Read more' link. Default: 'read more ...'
             lessLink: 'Read less'         // The text of 'Read less' link. Default: 'read less'

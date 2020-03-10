@@ -241,7 +241,7 @@ body,html{
     color: #ff5505;
 }
 .box-effect > p{
-    text-align: center;
+    text-align: justify;
     font-size: large;
     /* font-style: italic; */
 }
@@ -250,13 +250,11 @@ body,html{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 2.5rem;
     margin: 20px 80px;
-   
-
 }
 #grid > div {
     /* background: #EDE7F6; */
     background: #ffffff;
-    padding: 2.5rem;
+    padding: 1rem;
     /* border-radius: 1rem; */
 }
 #grid > div:hover{
@@ -282,16 +280,18 @@ body,html{
 	color: #ff5505;
 	text-decoration: none;
 }
-
+@media screen and (max-width: 700px) {
+    #grid{
+        margin: 10px 30px;
+    }
+}
 /* contact */
-
 .contact-info{
-    /* text-align: center; */
-    padding-left: 8%;
+    padding-left:15px;
 }
 .contact-info-detail{
     display: inline-block;
-    padding-right: 2%;
+    padding-right: 5%;
     color: white;
     font-family: poppins;
 }
@@ -309,7 +309,7 @@ input[type=text], textarea {
 
 input[type=submit] {
     width: 10%;
-    margin-left: 14%;
+    margin-left: 15%;
     background-color: #ff732f;
     color: white;
     padding: 12px 20px;
@@ -325,7 +325,10 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: #1e2e3b;
+  background-color: #6b83e0;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-image: url('images/contact-us2.jpg');
   padding: 20px;
 }
 
@@ -349,9 +352,10 @@ input[type=submit]:hover {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .col-25, .col-50{
     width: 70%;
+    margin-right: 2px;
     margin-top: 2px;
     float: none;
   }
@@ -363,11 +367,14 @@ input[type=submit]:hover {
     margin-top: 2px;
     width: 35%;
   }
-  .contact-info{
-      float: left;
+  .contact-info-detail{
+      padding: 10px;
   }
+  #adjust{
+      display: block;
+      padding-left: 60px;
+    }
 }
-
 /* footer */
 .footer{
     background-color: #17252a;
@@ -378,6 +385,7 @@ input[type=submit]:hover {
 .inside-footer{
     display: inline-block;
     padding: 2%;
+    padding-left: 5%;
 }
 .copyright{
     text-align: center;
@@ -392,18 +400,18 @@ input[type=submit]:hover {
         font-weight: normal;
         padding: 5px;
     }
+    #social{
+        padding-left: 12%;
+    }
     .copyright{
         font-weight: normal;
     }
 }
 /* About us page */
-/* .about-boxes{
+.about-boxes{
     display: inline-block;
-    width: 50%;
+    width: 45%;
+    margin: 0;
+    padding: 20px;
 }
-.about-image{
-    width: 50%;
-} */
-
-
 
