@@ -36,8 +36,10 @@ body,html{
 {
     background-image: url(images/bg2.jpg);
     background-color: rgb(255, 255, 255);
-    height: 100vh;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-position: center;
     
 }
@@ -195,6 +197,9 @@ body,html{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 .parallax2{
     /* The image used */
@@ -206,11 +211,14 @@ body,html{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 .para{
     font-size: 20px;
     padding:25px;
-    text-align: justify;
+    text-align: center;
     margin: 0;
     font-family: poppins;
 }
@@ -291,9 +299,10 @@ body,html{
 }
 .contact-info-detail{
     display: inline-block;
-    padding-right: 5%;
+    padding-right: 8%;
     color: white;
     font-family: poppins;
+    font-size: 14px;
 }
 input[type=text], textarea {
   width: 87%;
@@ -324,12 +333,16 @@ input[type=submit]:hover {
 }
 
 .container {
-  border-radius: 5px;
-  background-color: #6b83e0;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-image: url('images/contact-us2.jpg');
-  padding: 20px;
+    border-radius: 5px;
+    background-color: #6b83e0;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url('images/contact-us2.jpg');
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    padding: 20px;
 }
 
 .col-25 {
@@ -369,6 +382,7 @@ input[type=submit]:hover {
   }
   .contact-info-detail{
       padding: 10px;
+      font-size: 14px;
   }
   #adjust{
       display: block;
@@ -385,11 +399,14 @@ input[type=submit]:hover {
 .inside-footer{
     display: inline-block;
     padding: 2%;
-    padding-left: 5%;
+    padding-left: 8%;
 }
 .copyright{
     text-align: center;
     font-weight: bold;
+}
+#contact-footer{
+    padding-left: 20%;
 }
 @media only screen and (max-width: 700px){
     .footer{
@@ -405,6 +422,9 @@ input[type=submit]:hover {
     }
     .copyright{
         font-weight: normal;
+    }
+    #contact-footer{
+        padding-left: 5px;
     }
 }
 /* About us page */
