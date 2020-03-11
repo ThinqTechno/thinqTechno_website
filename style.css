@@ -2,7 +2,7 @@
 .mySlides {display: none;}
 body,html{
     
-    background-color: #e5e5e5;
+    background-color: #ffffcc;;
     height: 60%;
     margin: 0;
 }
@@ -261,13 +261,14 @@ body,html{
 }
 #grid > div {
     /* background: #EDE7F6; */
-    background: #ffffff;
+    background: white;
     padding: 1rem;
     /* border-radius: 1rem; */
 }
 #grid > div:hover{
     box-shadow: 10px 20px 10px #aaaaaa;
 }
+
 .box-effect {
     /* border: 1px solid #BFBFBF; */
     box-shadow: 10px 10px 5px #aaaaaa;
