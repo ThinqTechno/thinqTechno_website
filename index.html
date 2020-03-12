@@ -9,6 +9,7 @@
     <title>ThinqTechno</title>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -45,7 +46,14 @@
             </ul> 
         </div>
     </div>
-    <div id="particles-js"></div>   
+    <div id="particles-js">
+        <h1 class="ml11">
+            <span class="text-wrapper">
+              <span class="line line1"> <b> Empowered by Technology</b></span><br>
+              <span class="letters"><b>Driven by Talent</b></span>
+            </span>
+          </h1>
+    </div>   
         <!-- <div class="slideshow-container">
             <div class="mySlides">
                 <img src="images/empowered.png" style="width: 400px; height: 100px; position: absolute; top: 130px;left: 100px;"> 
@@ -71,7 +79,7 @@
         <a name="about"></a>
             <div class="parallax"></div>
 
-            <div style="height:420px;background-color:#ffffcc;">
+            <div style="height:420px;background-color:#fafaf8;">
                 <h1>About us</h1>
                 <p class="para">
                     Information Technology enables business and business drives IT. Thriving organizations create one unified team from these divergent silos.<br> 
@@ -84,7 +92,7 @@
 
             <div class="parallax"></div>    
 
-            <div style="height:300px;background-color:#ffffcc;">
+            <div style="height:300px;background-color:#fafaf8;">
                 <h1>Who We Are...</h1>
                 <p class="para">
                     We are a digital transformation consultancy and software development company that provides cutting edge Engineering Solutions, with a deep understanding of Modern Technology and strong expertise in multiple business domains. We are helping start-ups, medium and large enterprise clients untangle complex issues that always emerge during their digital evolution journey.<br>
@@ -257,29 +265,29 @@
         </div> 
         <div class="footer">
             <span class="inside-footer">
-                <h3>Bangalore Head office <span><a style = "color: white;" target="_blank" href="https://www.google.com/maps/place/ThinqTechno+systems+Pvt.+Ltd./@12.9084693,77.6302374,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae15bb1b453621:0xe133be71d6982d83!8m2!3d12.9084693!4d77.6324315"><i class="material-icons">place</i></span></a></h3>
+                <h3>Bangalore Head office <span><a class ="loc-color" target="_blank" href="https://www.google.com/maps/place/ThinqTechno+systems+Pvt.+Ltd./@12.9084693,77.6302374,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae15bb1b453621:0xe133be71d6982d83!8m2!3d12.9084693!4d77.6324315"><i class="material-icons">place</i></span></a></h3>
                 No 154, "Royal Space" 5th Main HSR,<br> Layout 7<sup>th</sup> Sector, Bangalore,<br>
                 Bangalore, Karnataka, India, 560102
             </span>
             <span class="inside-footer">
-                <h3>Bagalkot office <span><i class="material-icons">place</i></span></h3>
+                <h3>Bagalkot office <span><a href="#" target="_blank" class ="loc-color"><i class="material-icons">place</i></a></span></h3>
                 ThinqTechno Systems Pvt. Ltd. Sy. No. 151/A,<br>
                 plot No. 46 Shivagiri Badavane, Vidyagiri,<br>BAGALKOT KARNATAKA
                 587103
                  
             </span>
             <span class="inside-footer">
-                <h3>USA office <span><i class="material-icons">place</i></span></h3>
+                <h3>USA office <span><a href="#" target="_blank" class ="loc-color"><i class="material-icons">place</i></a></span></h3>
                 8456, north lake parkway,<br>
                 Orlando, Florida 32827<br>
                 contact: +14078645575
             </span>
             <span class="inside-footer" id="social">
                 <p style="font-weight: bold; font-family: cursive;">Social</p>
-                <a href="#" target="_blank"><i style="color: white; font-size: 25px;" class="fa fa-linkedin"></i></a>&nbsp;  
-                <a href="#" target="_blank"><i style="color: white; font-size: 25px;" class="fa fa-instagram"></i></a>&nbsp; 
-                <a href="#" target="_blank"><i style="color: white; font-size: 25px;" class="fa fa-twitter"></i></a>&nbsp;  
-                <a href="#" target="_blank"><i style="color: white; font-size: 25px;" class="fa fa-facebook"></i></a>&nbsp;
+                <a class ="loc-color" href="#" target="_blank"><i style="font-size: 25px;" class="fa fa-linkedin"></i></a>&nbsp;  
+                <a class ="loc-color" href="#" target="_blank"><i style="font-size: 25px;" class="fa fa-instagram"></i></a>&nbsp; 
+                <a class ="loc-color" href="#" target="_blank"><i style="font-size: 25px;" class="fa fa-twitter"></i></a>&nbsp;  
+                <a class ="loc-color" href="#" target="_blank"><i style="font-size: 25px;" class="fa fa-facebook"></i></a>&nbsp;
             </span>
             <span class="inside-footer" id="contact-footer">
                 <i style="font-size: 25px;color: white;"  class="material-icons">mail</i> info@thinqtechno.com<br>
@@ -305,6 +313,7 @@
             //     document.getElementById("nav-bar").style.display = "none";
             //     document.getElementById("close").style.display = "none";
             // }
+
            
             $(function(){
                 $('#menu').on("click",function(){
@@ -353,6 +362,39 @@
 
                     }
                 });
+            });
+
+            // Wrap every letter in a span
+            var textWrapper = document.querySelector('.ml11 .letters');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({loop: true})
+            .add({
+                targets: '.ml11 .line',
+                scaleY: [0,1],
+                opacity: [0.5,1],
+                easing: "easeOutExpo",
+                duration: 700
+            })
+            .add({
+                targets: '.ml11 .line',
+                translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+                easing: "easeOutExpo",
+                duration: 700,
+                delay: 100
+            }).add({
+                targets: '.ml11 .letter',
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=775',
+                delay: (el, i) => 34 * (i+1)
+            }).add({
+                targets: '.ml11',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
             });
 
             // $(function(){

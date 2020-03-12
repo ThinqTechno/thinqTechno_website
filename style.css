@@ -63,7 +63,7 @@ body,html{
 /* navigation bar */
 #nav-bar{
     float: right;
-    /* padding-top: 5px; */
+    padding-top: 14px;
     padding-right: 10%;
 }
 #nav{
@@ -76,7 +76,7 @@ body,html{
     display: inline-block;
 }
 .nav_names{
-    padding: 15px 20px;
+    padding: 15px 35px;
     text-decoration: none;
     /* color: #016a9d;*/
     color: #ff5505;
@@ -409,6 +409,12 @@ input[type=submit]:hover {
 #contact-footer{
     padding-left: 20%;
 }
+.loc-color{
+    color: white;
+}
+.loc-color:hover {
+    color: #ff5505;
+}
 @media only screen and (max-width: 700px){
     .footer{
         margin-top: 10px;
@@ -435,3 +441,42 @@ input[type=submit]:hover {
     margin: 0;
     padding-left: 27px;
 }
+
+/* moving text */
+.ml11 {
+    font-weight: 600;
+    font-size: 1.8em;
+  }
+  
+  .ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  
+  .ml11 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    /* background-color: #fff; */
+    transform-origin: 0 50%;
+  }
+  
+  .ml11 .line1 { 
+    position: relative;
+    top: 80px; 
+    left: 150px;
+  }
+  
+  .ml11 .letter {
+    display: inline-block;
+    line-height: 0.5em;
+    color: #ff5505;
+    position: relative;
+    top: 80px;
+    left: 225px;
+  }
