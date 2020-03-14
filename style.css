@@ -340,7 +340,7 @@ input[type=submit]:hover {
 }
 
 .container {
-    border-radius: 5px;
+    /* border-radius: 5px; */
     background-color: #6b83e0;
     background-position: right;
     background-repeat: no-repeat;
@@ -400,7 +400,7 @@ input[type=submit]:hover {
 .footer{
     background-color: #17252a;
     color: white;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-family: poppins;
 }
 .inside-footer{
@@ -410,7 +410,7 @@ input[type=submit]:hover {
 }
 .copyright{
     text-align: center;
-    font-weight: bold;
+    font-size: 14px;
 }
 #contact-footer{
     padding-left: 20%;
@@ -434,7 +434,7 @@ input[type=submit]:hover {
         padding-left: 12%;
     }
     .copyright{
-        font-weight: normal;
+        font-size: 12px;
     }
     #contact-footer{
         padding-left: 5px;
@@ -469,7 +469,7 @@ input[type=submit]:hover {
 
 .ml11 .text-wrapper {
     position: absolute;
-    top: 90px;
+    top: 100px;
     left: 45%;
     display: inline-block;
     padding-top: 0.1em;
@@ -509,4 +509,27 @@ input[type=submit]:hover {
         top: 150px;
         left: 28%;
     }
+}
+
+/* career */
+#career{
+    font-family: poppins;
+    font-size: 20px;
+    text-align: left;
+    padding: 15px 35px;
+    background-color: #dbe9f2;
+}
+@media only screen and (max-width: 700px){
+    #career{
+        font-size: 14px;
+    }
+}
+#job-list{
+    box-shadow: 0 0 10px #f1f1f1;
+    background-color: white;
+    border-radius: 5px;
+}
+#job-list > div{
+    padding-left: 50px;
+    color: #016a9d;
 }

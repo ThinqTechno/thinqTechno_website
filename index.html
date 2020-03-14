@@ -191,8 +191,13 @@
             <div class="box-effect">
                 <h3>ERP implementation</h3>
                 <p>
-                    In management, information technology consulting as a
-                    field of activity focuses on advising organizations on how best to use information technology (IT)   
+                    An Enterprise resource planning (ERP) solution enables an organization to use a system of integrated applications to streamline and improve their business operations and automate many back-office functions related to technology, services, and human resources, resulting in a significant amount of savings. It is a secure and adaptable system to accommodate the growing needs of your company. <br>
+                    An ERP system increases the productivity of your enterprise by integrating data and processes across multiple departments and locations. <br>
+                    Selecting an ERP software solution for your business is an important decision that takes time and research, but, once selected, implementing that software can be intimidating. <br>
+                    An ERP transition involves introducing the software, migrating your data over to the new system, configuring your users and processes, and training your staff on the new system. It’s important to approach any Major implementation process one step at a time. <br>
+                    ERP technologies are constantly changing and all ERP implementations vary in scope. <br>
+                    Selecting an ERP system software provider to expertly handle the implementation process for your business is just as important as selecting the right software. <br>
+                    Our experienced ERP system implementation consultants at ThinqTechno will be your reliable partner in identifying the best ERP solution for your business and support your firm through a successful and calm ERP implementation process.   
                 </p>
                 <!-- <a href="#" class="info">Read more...</a> -->
             </div>
@@ -364,6 +369,18 @@
                 });
             });
 
+            $(function(){
+                $(window).on("scroll",function(){
+                    if($(window).scrollTop() > 50){
+                        $(".text-wrapper").hide();
+
+                    }else
+                    {
+                        $(".text-wrapper").show();
+
+                    }
+                });
+            });
             // Wrap every letter in a span
             var textWrapper = document.querySelector('.ml11 .letters');
             textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
