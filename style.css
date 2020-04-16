@@ -203,7 +203,7 @@ body,html{
 }
 .parallax2{
     /* The image used */
-    background-image: url('images/background2.jpg');
+    background-image: url('images/background2.png');
     /* Full height */
     height: 100%; 
     /* Create the parallax scrolling effect */
@@ -435,6 +435,9 @@ input[type=submit]:hover {
 #contact-footer{
     padding-left: 20%;
 }
+#arrow-up{
+    padding-left: 20%;
+}
 .loc-color{
     color: white;
 }
@@ -458,6 +461,9 @@ input[type=submit]:hover {
     }
     #contact-footer{
         padding-left: 5px;
+    }
+    #arrow-up{
+        padding-left: 9%;
     }
 }
 /* About us page */
